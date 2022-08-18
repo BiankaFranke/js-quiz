@@ -1,3 +1,2 @@
 # js-quiz
-
-# Github pages:
+Github pages: https://biankafranke.github.io/js-quiz/
