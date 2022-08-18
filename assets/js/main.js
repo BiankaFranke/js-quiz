@@ -66,6 +66,12 @@ let data = [
 ];
 
 // =======================================================================================
+    // create an headline h1;
+    const headline = document.createElement("h1");
+    const headlineNode = document.createTextNode("Quiz");
+    headline.appendChild(headlineNode);
+    content.insertBefore(headline, content.children[0]);
+
 data.forEach(item => {
     // declaration of new DOM-elements and variables for each property of item and variables 
     const image = document.createElement("img");
@@ -76,11 +82,6 @@ data.forEach(item => {
 
     // center all elements in id 'content'
     content.setAttribute("align", "center");
-
-    // create an headline h1
-    const headline = document.createElement("h1");
-    headline.innerHTML = 'Quiz';
-    content.appendChild(headline);
 
     // set new div-element into the div-element 'content'
     content.appendChild(choice);
